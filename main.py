@@ -10,12 +10,10 @@ import os
 
 
 def sentence():
-    segments = (
-        "Rename Saturn 'The Hoarder'",
-        " \u2014 ",
-        "it keeps the most moons of any planet, plus a ring of ice chunks it refuses to throw away.",
-    )
-    return "".join(segments)
+    head = "Rename Saturn 'The Hoarder'"
+    dash = " \u2014 "
+    reason = "it keeps the most moons of any planet, plus a ring of ice chunks it refuses to throw away."
+    return head + dash + reason
 
 
 def save(line):
